@@ -14,7 +14,7 @@
  * Customer's XDM schema namespace
  * @type {string}
  */
-const CUSTOM_SCHEMA_NAMESPACE = '_sitesinternal';
+// const CUSTOM_SCHEMA_NAMESPACE = '';
 
 /**
  * Returns experiment id and variant running
@@ -60,12 +60,12 @@ function getDatastreamConfiguration() {
  * @param options event in the XDM schema format
  */
 function enhanceAnalyticsEvent(options) {
-  const experiment = getExperimentDetails();
-  options.xdm[CUSTOM_SCHEMA_NAMESPACE] = {
-    ...options.xdm[CUSTOM_SCHEMA_NAMESPACE],
-    ...(experiment && { experiment }), // add experiment details, if existing, to all events
-  };
-  console.debug(`enhanceAnalyticsEvent complete: ${JSON.stringify(options)}`);
+  // const experiment = getExperimentDetails();
+  // options.xdm[CUSTOM_SCHEMA_NAMESPACE] = {
+  //   ...options.xdm[CUSTOM_SCHEMA_NAMESPACE],
+  //   ...(experiment && { experiment }), // add experiment details, if existing, to all events
+  // };
+  // console.debug(`enhanceAnalyticsEvent complete: ${JSON.stringify(options)}`);
 }
 
 /**
@@ -162,9 +162,9 @@ export async function analyticsTrackPageViews(document, additionalXdmFields = {}
         name: `${document.title}`,
       },
     },
-    [CUSTOM_SCHEMA_NAMESPACE]: {
-      ...additionalXdmFields,
-    },
+    // [CUSTOM_SCHEMA_NAMESPACE]: {
+    //   ...additionalXdmFields,
+    // },
   };
 
   return sendAnalyticsEvent(xdmData);
@@ -222,9 +222,9 @@ export async function analyticsTrackLinkClicks(element, linkType = 'other', addi
         type: linkType,
       },
     },
-    [CUSTOM_SCHEMA_NAMESPACE]: {
-      ...additionalXdmFields,
-    },
+    // [CUSTOM_SCHEMA_NAMESPACE]: {
+    //   ...additionalXdmFields,
+    // },
   };
 
   return sendAnalyticsEvent(xdmData);
@@ -238,9 +238,9 @@ export async function analyticsTrackLinkClicks(element, linkType = 'other', addi
 export async function analyticsTrackCWV(cwv) {
   const xdmData = {
     eventType: 'web.performance.measurements',
-    [CUSTOM_SCHEMA_NAMESPACE]: {
-      cwv,
-    },
+    // [CUSTOM_SCHEMA_NAMESPACE]: {
+    //   cwv,
+    // },
   };
 
   return sendAnalyticsEvent(xdmData);
@@ -262,10 +262,10 @@ export async function analyticsTrack404(data, additionalXdmFields = {}) {
         },
       },
     },
-    [CUSTOM_SCHEMA_NAMESPACE]: {
-      isPageNotFound: true,
-      ...additionalXdmFields,
-    },
+    // [CUSTOM_SCHEMA_NAMESPACE]: {
+    //   isPageNotFound: true,
+    //   ...additionalXdmFields,
+    // },
   };
 
   return sendAnalyticsEvent(xdmData);
@@ -282,9 +282,9 @@ export async function analyticsTrackError(data, additionalXdmFields = {}) {
         isErrorPage: true,
       },
     },
-    [CUSTOM_SCHEMA_NAMESPACE]: {
-      ...additionalXdmFields,
-    },
+    // [CUSTOM_SCHEMA_NAMESPACE]: {
+    //   ...additionalXdmFields,
+    // },
   };
 
   return sendAnalyticsEvent(xdmData);
@@ -295,25 +295,25 @@ export async function analyticsTrackConversion(data, additionalXdmFields = {}) {
 
   const xdmData = {
     eventType: 'web.webinteraction.conversion',
-    [CUSTOM_SCHEMA_NAMESPACE]: {
-      conversion: {
-        conversionComplete: 1,
-        conversionName,
-        conversionValue,
-      },
-      ...additionalXdmFields,
-    },
+    // [CUSTOM_SCHEMA_NAMESPACE]: {
+    //   conversion: {
+    //     conversionComplete: 1,
+    //     conversionName,
+    //     conversionValue,
+    //   },
+    //   ...additionalXdmFields,
+    // },
   };
 
   if (element.tagName === 'FORM') {
     xdmData.eventType = 'web.formFilledOut';
     const formId = element?.id || element?.dataset?.action;
-    xdmData[CUSTOM_SCHEMA_NAMESPACE].form = {
-      ...(formId && { formId }),
-      // don't count as form complete, as this event should be tracked separately,
-      // track only the details of the form together with the conversion
-      formComplete: 0,
-    };
+    // xdmData[CUSTOM_SCHEMA_NAMESPACE].form = {
+    //   ...(formId && { formId }),
+    //   // don't count as form complete, as this event should be tracked separately,
+    //   // track only the details of the form together with the conversion
+    //   formComplete: 0,
+    // };
   } else if (element.tagName === 'A') {
     xdmData.eventType = 'web.webinteraction.linkClicks';
     xdmData.web = {
@@ -344,13 +344,13 @@ export async function analyticsTrackFormSubmission(element, additionalXdmFields 
   const formId = element?.id || element?.dataset?.action;
   const xdmData = {
     eventType: 'web.formFilledOut',
-    [CUSTOM_SCHEMA_NAMESPACE]: {
-      form: {
-        ...(formId && { formId }),
-        formComplete: 1,
-      },
-      ...additionalXdmFields,
-    },
+    // [CUSTOM_SCHEMA_NAMESPACE]: {
+    //   form: {
+    //     ...(formId && { formId }),
+    //     formComplete: 1,
+    //   },
+    //   ...additionalXdmFields,
+    // },
   };
 
   return sendAnalyticsEvent(xdmData);
@@ -373,22 +373,22 @@ export async function analyticsTrackVideo({
     showType: `${type}`,
   };
   const baseXdm = {
-    [CUSTOM_SCHEMA_NAMESPACE]: {
-      media: {
-        mediaTimed: {
-          primaryAssetReference,
-        },
-      },
-      ...additionalXdmFields,
-    },
+    // [CUSTOM_SCHEMA_NAMESPACE]: {
+    //   media: {
+    //     mediaTimed: {
+    //       primaryAssetReference,
+    //     },
+    //   },
+    //   ...additionalXdmFields,
+    // },
   };
 
   if (hasStarted) {
-    baseXdm[CUSTOM_SCHEMA_NAMESPACE].media.mediaTimed.impressions = { value: 1 };
+    // baseXdm[CUSTOM_SCHEMA_NAMESPACE].media.mediaTimed.impressions = { value: 1 };
   } else if (hasCompleted) {
-    baseXdm[CUSTOM_SCHEMA_NAMESPACE].media.mediaTimed.completes = { value: 1 };
+    // baseXdm[CUSTOM_SCHEMA_NAMESPACE].media.mediaTimed.completes = { value: 1 };
   } else if (progressMarker) {
-    baseXdm[CUSTOM_SCHEMA_NAMESPACE].media.mediaTimed[progressMarker] = { value: 1 };
+    // baseXdm[CUSTOM_SCHEMA_NAMESPACE].media.mediaTimed[progressMarker] = { value: 1 };
   } else {
     return Promise.resolve();
   }
