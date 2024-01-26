@@ -59,7 +59,9 @@ export default async function decorate($block) {
   $text.classList.add('text');
   $text.append($pre, $h2, $p, $link);
 
-  const $image = document.createElement('div');
+  const $image = document.createElement('a');
+  $image.href = path;
+  // $image.target = '_blank'; // For debugging
   $image.classList.add('image');
   // find image
   const $hero = doc.querySelector('body > main picture');
