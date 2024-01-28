@@ -10,6 +10,8 @@
  * governing permissions and limitations under the License.
  */
 
+import { registerAssetClick, registerAssetObserver, drainAssetsQueue } from './lib-content.js';
+
 /**
  * Customer's XDM schema namespace
  * @type {string}
@@ -114,6 +116,10 @@ async function sendAnalyticsEvent(xdmData) {
     console.warn('alloy not initialized, cannot send analytics event');
     return Promise.resolve();
   }
+
+  // drain content events queue
+  drainAssetsQueue();
+
   // eslint-disable-next-line no-undef
   return alloy('sendEvent', {
     documentUnloading: true,
@@ -133,6 +139,13 @@ export async function analyticsSetConsent(approved) {
     console.warn('alloy not initialized, cannot set consent');
     return Promise.resolve();
   }
+
+  if (approved) {
+    // Content analytics
+    document.querySelectorAll('img, video').forEach(registerAssetObserver);
+    document.querySelectorAll('a > picture > img').forEach(assetElement => registerAssetClick(assetElement, assetElement.parentElement.parentElement));
+  }
+
   // eslint-disable-next-line no-undef
   return alloy('setConsent', {
     consent: [{
