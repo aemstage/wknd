@@ -122,7 +122,7 @@ async function sendAnalyticsEvent(xdmData) {
 
   // eslint-disable-next-line no-undef
   return alloy('sendEvent', {
-    documentUnloading: true,
+    documentUnloading: false,
     xdm: xdmData,
   });
 }

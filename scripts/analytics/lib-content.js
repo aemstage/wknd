@@ -161,7 +161,7 @@ async function sendContentEvent(xdmData) {
 
   // eslint-disable-next-line no-undef
   return alloy("sendEvent", {
-    documentUnloading: true,
+    documentUnloading: false,
     xdm: xdmData,
     edgeConfigOverrides: {
       com_adobe_experience_platform: {
