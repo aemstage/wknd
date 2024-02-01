@@ -181,7 +181,7 @@ async function analyticsTrackAssetsViews(assetsIDs) {
     experienceContent: {
       experience: { experienceID: getExperienceId() },
       assetsIDs,
-      contentEventType: "view",
+      contentEventType: "web.asset.view",
     },
   };
 
@@ -201,7 +201,7 @@ async function analyticsTrackAssetsClicked(assetsIDs, URL) {
     experienceContent: {
       experience: { experienceID: getExperienceId() },
       assetsIDs,
-      contentEventType: "click",
+      contentEventType: "web.asset.click",
     },
   };
 
