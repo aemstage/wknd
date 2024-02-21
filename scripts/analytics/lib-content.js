@@ -14,7 +14,8 @@
  * Customer's content dataset id
  * @type {string}
  */
-const CONTENT_DATASET_ID = "65b75723fee5562c68866119";
+const CONTENT_DATASET_ID = "65d5b56698b6bf2c681c2262";
+const TENANT_SCHEMA_NAMESPACE = "_aresstagevalidationco";
 /**
  * Assets views debounce timeout
  */
@@ -119,14 +120,22 @@ function getHelixExperimentId() {
 }
 
 /**
+ * Return experienceSource
+ */
+function getExperienceSource() {
+  const pageURL = new URL(window.location.href);
+  const helixURL = getHelixExperimentId();
+  const experienceSource = helixURL || pageURL.href;
+  return experienceSource;
+}
+
+/**
  * Return experienceId
  */
 function getExperienceId() {
-  const pageURL = new URL(window.location.href);
-  const helixURL = getHelixExperimentId();
-  const experienceURL = helixURL || pageURL.href;
+  const experienceSource = getExperienceSource();
   const lastModified = getLastModified();
-  return [experienceURL, lastModified].join("::");
+  return [experienceSource, lastModified].join("::");
 }
 
 /**
@@ -172,16 +181,46 @@ async function sendContentEvent(xdmData) {
 }
 
 /**
+ * Basic tracking for experience views with alloy
+ * @param assets - string[]
+ * @returns {Promise<*>}
+ */
+export async function analyticsTrackExperienceViews(document) {
+  const xdmData = {
+    [TENANT_SCHEMA_NAMESPACE]: {
+      experienceContent: {
+        experience: {
+          experienceID: getExperienceId(),
+          experienceSource: getExperienceSource(),
+          experienceChannel: "web",
+        },
+        assets: assetsIDs.map((assetID) => ({ assetID })),
+        metrics: { experience: { views: { value: 1 } } },
+      },
+    },
+  };
+
+  return sendContentEvent(xdmData);
+}
+
+
+/**
  * Basic tracking for assets views with alloy
  * @param assets - string[]
  * @returns {Promise<*>}
  */
 async function analyticsTrackAssetsViews(assetsIDs) {
   const xdmData = {
-    experienceContent: {
-      experience: { experienceID: getExperienceId() },
-      assetsIDs,
-      contentEventType: "web.asset.view",
+    [TENANT_SCHEMA_NAMESPACE]: {
+      experienceContent: {
+        experience: {
+          experienceID: getExperienceId(),
+          experienceSource: getExperienceSource(),
+          experienceChannel: "web",
+        },
+        assets: assetsIDs.map((assetID) => ({ assetID })),
+        metrics: { assets: { views: { value: 1 } } },
+      },
     },
   };
 
@@ -198,10 +237,16 @@ async function analyticsTrackAssetsClicked(assetsIDs, URL) {
   const xdmData = {
     eventType: "web.webinteraction.linkClicks",
     web: { webInteraction: { URL, linkClicks: { value: 1 }, type: "other" } }, // linkType can be 'download' or 'other'
-    experienceContent: {
-      experience: { experienceID: getExperienceId() },
-      assetsIDs,
-      contentEventType: "web.asset.click",
+    [TENANT_SCHEMA_NAMESPACE]: {
+      experienceContent: {
+        experience: {
+          experienceID: getExperienceId(),
+          experienceSource: getExperienceSource(),
+          experienceChannel: "web",
+        },
+        assets: assetsIDs.map((assetID) => ({ assetID })),
+        metrics: { assets: { clicks: { value: 1 } } },
+      },
     },
   };
 

@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
-import { registerAssetClick, registerAssetObserver, drainAssetsQueue } from './lib-content.js';
+import { registerAssetClick, registerAssetObserver, drainAssetsQueue, analyticsTrackExperienceViews } from './lib-content.js';
 
 /**
  * Customer's XDM schema namespace
@@ -49,9 +49,9 @@ function getAlloyInitScript() {
  * @returns {{edgeConfigId: string, orgId: string}}
  */
 function getDatastreamConfiguration() {
-  // Sites Internal
+  // Aresstagevalidationco
   return {
-    edgeConfigId: '4e48e360-735c-40e0-b893-11ffc1d1e093',
+    edgeConfigId: 'a8ae15cb-da14-48f8-b53b-e60aa781ae37',
     orgId: '4E9432245BC7C44B0A494037@AdobeOrg',
   };
 }
@@ -208,9 +208,10 @@ export async function setupAnalyticsTrackingWithAlloy(document) {
   // Custom logic can be inserted here in order to support early tracking before alloy library
   // loads, for e.g. for page views
   const pageViewPromise = analyticsTrackPageViews(document); // track page view early
+  const experienceViewPromise = analyticsTrackExperienceViews(document); // track experience view early
 
   await import('./alloy.min.js');
-  await Promise.all([configurePromise, pageViewPromise]);
+  await Promise.all([configurePromise, pageViewPromise, experienceViewPromise]);
 }
 
 /**
