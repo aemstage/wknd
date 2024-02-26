@@ -194,7 +194,6 @@ export async function analyticsTrackExperienceViews(document) {
           experienceSource: getExperienceSource(),
           experienceChannel: "web",
         },
-        assets: assetsIDs.map((assetID) => ({ assetID })),
         metrics: { experience: { views: { value: 1 } } },
       },
     },
