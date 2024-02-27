@@ -202,7 +202,6 @@ export async function analyticsTrackExperienceViews(document) {
   return sendContentEvent(xdmData);
 }
 
-
 /**
  * Basic tracking for assets views with alloy
  * @param assets - string[]
