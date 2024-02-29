@@ -9,6 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+import { DEFAULT_OPTIONS } from "../../plugins/experimentation/src/index.js";
 
 /**
  * Customer's content dataset id
@@ -94,39 +95,36 @@ export function getLastModified() {
 /**
  * Return helix experiment id: campaigns, experiments, audiences
  */
-function getHelixExperimentId() {
-  let servedExperiencePathname = undefined;
-  if (window.hlx.campaign && window.hlx.campaign.servedExperience) {
-    servedExperiencePathname = window.hlx.campaign.servedExperience;
-  } else if (window.hlx.experiment && window.hlx.experiment.servedExperience) {
-    servedExperiencePathname = window.hlx.experiment.servedExperience;
-  } else if (window.hlx.audience && window.hlx.audience.servedExperience) {
-    servedExperiencePathname = window.hlx.audience.servedExperience;
-  }
-
-  if (servedExperiencePathname) {
-    if (servedExperiencePathname.endsWith("index.plain.html")) {
-      servedExperiencePathname = servedExperiencePathname.slice(0, -14);
-    }
-    if (servedExperiencePathname.endsWith(".plain.html")) {
-      servedExperiencePathname = servedExperiencePathname.slice(0, -11);
-    }
-
-    const url = new URL(window.location.href);
-    url.pathname = servedExperiencePathname;
-    url.search = "";
-    return url.href;
-  }
-}
-
-/**
- * Return experienceSource
- */
 function getExperienceSource() {
-  const pageURL = new URL(window.location.href);
-  const helixURL = getHelixExperimentId();
-  const experienceSource = helixURL || pageURL.href;
-  return experienceSource;
+  if (window.hlx) {
+    if (window.hlx.campaign && window.hlx.campaign.selectedCampaign) {
+      const experienceSource = new URL(window.location.href);
+      experienceSource.searchParams.set(DEFAULT_OPTIONS.campaignsQueryParameter, window.hlx.campaign.selectedCampaign);
+      if (window.hlx.campaign.resolvedAudiences && window.hlx.campaign.resolvedAudiences.length){
+        experienceSource.searchParams.set(DEFAULT_OPTIONS.audiencesQueryParameter, window.hlx.campaign.resolvedAudiences[0]);
+      }
+      return experienceSource.href;
+    }
+
+    if (window.hlx.experiment) {
+      const experienceSource = new URL(window.location.href);
+      if(window.hlx.experiment.id && window.hlx.experiment.selectedVariant) {
+        experienceSource.searchParams.set(DEFAULT_OPTIONS.experimentsQueryParameter, `${window.hlx.experiment.id}/${window.hlx.experiment.selectedVariant}`);
+      }
+      if (window.hlx.experiment.resolvedAudiences && window.hlx.experiment.resolvedAudiences.length){
+        experienceSource.searchParams.set(DEFAULT_OPTIONS.audiencesQueryParameter, window.hlx.experiment.resolvedAudiences[0]);
+      }
+      return experienceSource.href;
+    }
+
+    if (window.hlx.audience) {
+      const experienceSource = new URL(window.location.href);
+      experienceSource.searchParams.set(DEFAULT_OPTIONS.audiencesQueryParameter, window.hlx.audience.selectedAudience);
+      return experienceSource.href;
+    }
+  }
+
+  return new URL(window.location.href).href;
 }
 
 /**
