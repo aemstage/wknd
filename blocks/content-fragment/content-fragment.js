@@ -26,6 +26,7 @@ const getDocumentLastModified = (document) => {
   return 'unknown';
 };
 
+const DUMMY_URL_BASE = 'https://localhost.com';
 /**
  * @param {HTMLElement} $block The header block element
  */
@@ -33,8 +34,6 @@ export default async function decorate($block) {
   const link = $block.querySelector('a');
   const path = link ? link.getAttribute('href') : $block.textContent.trim();
   const doc = await loadFragment(path);
-  const fragmentSearchParams = new URLSearchParams();
-  fragmentSearchParams.set('documentLastModified', getDocumentLastModified(doc));
   if (!doc) {
     return;
   }
@@ -42,6 +41,11 @@ export default async function decorate($block) {
   if (!fragmentContents || !fragmentContents.children.length) {
     return;
   }
+
+  const fragmentPath = new URL(path, DUMMY_URL_BASE);
+  const fragmentSearchParams = fragmentPath.searchParams;
+  fragmentSearchParams.set('documentLastModified', getDocumentLastModified(doc));
+
   $block.replaceChildren(...fragmentContents.children);
-  $block.setAttribute('data-fragment-src', `${path}?${fragmentSearchParams.toString()}`);
+  $block.setAttribute('data-fragment-src', fragmentPath.href.replace(DUMMY_URL_BASE, ''));
 }
