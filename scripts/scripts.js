@@ -58,6 +58,14 @@ export function isBlockLibrary() {
 }
 
 /**
+ * Determine if we are serving content for the promotions if so don't load the header or footer
+ * @returns {boolean} True if we are loading promotions content
+ */
+export function isPromotionLibrary() {
+  return window.location.pathname.startsWith('/promotions');
+}
+
+/**
  * Convience method for creating tags in one line of code
  * @param {string} tag Tag to create
  * @param {object} attributes Key/value object of attributes
@@ -225,7 +233,7 @@ async function loadLazy(doc) {
   const element = hash ? main.querySelector(hash) : false;
   if (hash && element) element.scrollIntoView();
 
-  if (!isBlockLibrary()) {
+  if (!isBlockLibrary() && !isPromotionLibrary()) {
     loadHeader(doc.querySelector('header'));
     loadFooter(doc.querySelector('footer'));
   }
