@@ -1,1 +1,1 @@
-export default `<div class="hz-3c6f2305-43c5-4b99-aa58-b752978cfb68" data-reactroot=""><span class="hz-5d7c82c0-6829-4679-ab2e-101296638795">Hottest deals</span><a class="hz-fcc5efbf-fa65-408c-9f4c-b2c1aad56aff" href="/order-now">ORDER NOW!</a></div>`
+export default `<div class="hz-b93e938f-ac6a-494b-969a-0528c7746d51" data-reactroot=""><span class="hz-8fb1db43-1396-4795-9569-ff07bd9ec01b">Hottest deals</span><a class="hz-3b20fd85-ddf7-4e29-9419-c5e4d0a1f5d0" href="/order-now">ORDER NOW!</a></div>`
