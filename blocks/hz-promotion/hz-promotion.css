@@ -1,99 +1,131 @@
-.hz-e3058e4d-9eb9-4893-a8b0-0c43a3f6ce80 {
+.hz-503fae86-1a24-4401-bef9-b0746fbf5b04 {
   position: relative;
   width: 100%;
   height: 1000px;
-  background-color: rgba(137,163,217,1);
+  background-color: rgba(255,255,255,1);
 }
 
-.hz-638d3cdc-32c3-4cd0-b937-a2ea45a48947 {
+.hz-9877c028-1a02-46e3-a073-8910136ce224 {
   position: absolute;
-  width: 845.7750244140625px;
-  height: 212.17295837402344px;
-  left: 71.54352488842312%;
-  top: 34.86952120442758%;
-  transform: translate(-71.54352488842312%, -34.86952120442758%) rotate(0deg);
-  color: rgba(255, 255, 255, 1);
-  font-size: 56.228919982910156px;
+  width: 1552.456058425857px;
+  height: 2134.6270879649487px;
+  left: 9.735603544758058%;
+  top: 3.283449009912693%;
+  transform: translate(-9.735603544758058%, -3.283449009912693%);
+  opacity: undefined;
+}
+
+.hz-653c0268-45f8-4f08-bf82-76785893d2ca {
+  position: absolute;
+  width: 148.24795532226562px;
+  height: 41.02867412567139px;
+  left: 49.999988393622516%;
+  top: 97.5414474800569%;
+  transform: translate(-49.999988393622516%, -97.5414474800569%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69335174560547px;
   font-weight: undefined;
-  font-family: Source Sans Pro;
-  line-height: 0.8477939963340759;
-  text-align: left;
+  font-family: Bello Caps Pro;
+  line-height: 1.2000000476837158;
+  text-align: center;
   zIndex: 10;
 }
 
-.hz-f6fe6765-5b50-499e-9331-c102e17d428e {
+.hz-c0d2a9b1-78cd-4f5c-aba5-77f0681d5884 {
+  position: absolute;
+  width: 440.7444152832031px;
+  height: 225.31787109375px;
+  left: 50.00000200970389%;
+  top: 18.196794583715977%;
+  transform: translate(-50.00000200970389%, -18.196794583715977%) rotate(0deg);
+  color: rgba(203.00000309944153, 54.00000058114529, 80.00000283122063, 1);
+  font-size: 124.15336608886719px;
+  font-weight: bold;
+  font-family: Bebas Neue;
+  line-height: 0.7148440480232239;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-5aff8a50-6ec2-4efd-bc52-8fa34b45da03 {
+  position: absolute;
+  width: 278.211669921875px;
+  height: 76.97871398925781px;
+  left: 50%;
+  top: 54.28977736121712%;
+  transform: translate(-50%, -54.28977736121712%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69335174560547px;
+  font-weight: undefined;
+  font-family: Bello Caps Pro;
+  line-height: 0.9537500143051147;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-67a222e7-adb4-46b4-9e87-19cad0909af7 {
   position: relative;
   width: 100%;
   height: 1000px;
-  background-color: rgba(137,163,217,1);
+  background-color: rgba(255,255,255,1);
 }
 
-.hz-b6dc1cc8-322b-4338-8306-c9531338b22a {
+.hz-8d5dd6d1-9d4d-482c-8514-cc4f4a2d7b09 {
   position: absolute;
-  width: 845.7750244140625px;
-  height: 212.17295837402344px;
-  left: 71.54352488842312%;
-  top: 34.86952120442758%;
-  transform: translate(-71.54352488842312%, -34.86952120442758%) rotate(0deg);
-  color: rgba(255, 255, 255, 1);
-  font-size: 56.228919982910156px;
-  font-weight: undefined;
-  font-family: Source Sans Pro;
-  line-height: 0.8477939963340759;
-  text-align: left;
-  zIndex: 10;
+  width: 1552.456058425857px;
+  height: 2134.6270879649487px;
+  left: 9.735603544758058%;
+  top: 3.283449009912693%;
+  transform: translate(-9.735603544758058%, -3.283449009912693%);
+  opacity: undefined;
 }
 
-.hz-fd022aee-b379-4d46-af40-601d0852fa27 {
+.hz-65e917d9-c2b4-4924-ac3e-b58cf102eea0 {
   position: absolute;
-  width: 845.7750244140625px;
-  height: 19.876453399658203px;
-  left: 71.54352488842312%;
-  top: 59.82809240991678%;
-  transform: translate(-71.54352488842312%, -59.82809240991678%) rotate(0deg);
-  color: rgba(255, 255, 255, 1);
-  font-size: 17.28419303894043px;
+  width: 148.24795532226562px;
+  height: 41.02867412567139px;
+  left: 49.999988393622516%;
+  top: 97.5414474800569%;
+  transform: translate(-49.999988393622516%, -97.5414474800569%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69335174560547px;
   font-weight: undefined;
-  font-family: Brandon Grotesque;
+  font-family: Bello Caps Pro;
   line-height: 1.2000000476837158;
-  text-align: left;
+  text-align: center;
   zIndex: 10;
 }
 
-.hz-8dc666aa-3fb2-4092-ab67-2ae433dfbcd2 {
+.hz-718bf8f5-bdb8-4754-9522-3d4b5867483c {
   position: absolute;
-  width: 898.5749888420106px;
-  height: 599.0499963760376px;
-  left: 49.9999961242399%;
-  top: 46.72888511268167%;
-  transform: translate(-49.9999961242399%, -46.72888511268167%);
-  opacity: 0.39;
+  width: 440.7444152832031px;
+  height: 225.31787109375px;
+  left: 50.00000200970389%;
+  top: 18.196794583715977%;
+  transform: translate(-50.00000200970389%, -18.196794583715977%) rotate(0deg);
+  color: rgba(203.00000309944153, 54.00000058114529, 80.00000283122063, 1);
+  font-size: 124.15336608886719px;
+  font-weight: bold;
+  font-family: Bebas Neue;
+  line-height: 0.7148440480232239;
+  text-align: center;
+  zIndex: 10;
 }
 
-.hz-dfeea7f9-c540-46e0-a2f8-6f8d5bf64443 {
+.hz-0bd87223-0cf1-46d7-a636-7997dd0ce68b {
   position: absolute;
-  width: 845.7750244140625px;
-  height: 19.876453399658203px;
-  left: 71.54352488842312%;
-  top: 59.82809240991678%;
-  transform: translate(-71.54352488842312%, -59.82809240991678%) rotate(0deg);
-  color: rgba(255, 255, 255, 1);
-  font-size: 17.28419303894043px;
+  width: 278.211669921875px;
+  height: 76.97871398925781px;
+  left: 50%;
+  top: 54.28977736121712%;
+  transform: translate(-50%, -54.28977736121712%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69335174560547px;
   font-weight: undefined;
-  font-family: Brandon Grotesque;
-  line-height: 1.2000000476837158;
-  text-align: left;
+  font-family: Bello Caps Pro;
+  line-height: 0.9537500143051147;
+  text-align: center;
   zIndex: 10;
-}
-
-.hz-5e9ba16c-94fa-4ce7-9f6b-4477e675e16b {
-  position: absolute;
-  width: 898.5749888420106px;
-  height: 599.0499963760376px;
-  left: 49.9999961242399%;
-  top: 46.72888511268167%;
-  transform: translate(-49.9999961242399%, -46.72888511268167%);
-  opacity: 0.39;
 }
 
 header {
