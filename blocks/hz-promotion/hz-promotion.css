@@ -1,48 +1,420 @@
-.hz-2fefe69b-929d-4f79-8cc3-ac6c1fa1ae11 {
+.hz-f19b43f7-8d59-4354-ab3d-63e7be1374e4 {
   position: relative;
   width: 100%;
-  height: 628px;
-  background-color: rgba(255,255,255,1);
+  height: 1000px;
+  background-color: rgba(245,233,190,1);
 }
 
-.hz-d3d958ae-d99a-40a8-bcfc-ba687d6bb5ca {
+.hz-2c9f47ae-de56-4183-b22d-3fb8b25c6f28 {
   position: absolute;
-  width: 1222.6158868335147px;
-  height: 698.6376496191513px;
-  left: 55%;
-  top: 86%;
-  transform: translate(-55%, -86%);
-  opacity: undefined;
-}
-
-.hz-96aedb8b-f544-4914-b04c-10f7a615dcea {
-  position: absolute;
-  width: 947.276611328125px;
-  height: 99.61889457702637px;
-  left: 49.60431046558254%;
-  top: 77.81538575848536%;
-  transform: translate(-49.60431046558254%, -77.81538575848536%) rotate(0deg);
-  color: rgba(255, 255, 255, 1);
-  font-size: 99.618896484375px;
-  font-weight: undefined;
-  font-family: Bungee;
-  line-height: 1.2000000476837158;
+  width: 1120.3267822265625px;
+  height: 225.31787109375px;
+  left: 50.00007660686735%;
+  top: 54.0584075877896%;
+  transform: translate(-50.00007660686735%, -54.0584075877896%) rotate(0deg);
+  color: rgba(203.00000309944153, 54.00000058114529, 80.00000283122063, 1);
+  font-size: 124.15336608886719px;
+  font-weight: bold;
+  font-family: Bebas Neue;
+  line-height: 0.7148440480232239;
   text-align: center;
   zIndex: 10;
 }
 
-.hz-8b40c76c-1c36-4142-b26b-800a0d6cf618 {
+.hz-8bca8064-faf7-40d9-9022-35568ae33532 {
   position: absolute;
-  width: 442.0745849609375px;
-  height: 40.052276611328125px;
-  left: 49.353532866430285%;
-  top: 88.79085764603512%;
-  transform: translate(-49.353532866430285%, -88.79085764603512%) rotate(0deg);
-  color: rgba(255, 255, 255, 1);
-  font-size: 36.378662109375px;
+  width: 1120.32666015625px;
+  height: 41.02869415283203px;
+  left: 49.999928181171896%;
+  top: 76.34286831190666%;
+  transform: translate(-49.999928181171896%, -76.34286831190666%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69336700439453px;
   font-weight: undefined;
-  font-family: Montserrat;
+  font-family: Bello Caps Pro;
+  line-height: 0.9537500143051147;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-8a885fd8-a32e-4253-9efb-ff0c898d09bc {
+  position: absolute;
+  width: 1120.3267669677734px;
+  height: 406.67861862182616px;
+  left: 50%;
+  top: 13%;
+  transform: translate(-50%, -13%);
+  opacity: 0.7;
+}
+
+.hz-85e7eea4-5931-4370-b0c7-ac6f8e08d224 {
+  position: absolute;
+  width: 1120.32666015625px;
+  height: 41.02869415283203px;
+  left: 50.000081394671845%;
+  top: 92.19318615491251%;
+  transform: translate(-50.000081394671845%, -92.19318615491251%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69336700439453px;
+  font-weight: undefined;
+  font-family: Bello Caps Pro;
+  line-height: 0.9537500143051147;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-d4854ebe-dfdb-4e41-8ebb-e2ece5018a12 {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(245,233,190,1);
+}
+
+.hz-2d2c0b7d-7239-4f1a-9441-f6b80d1e7f2b {
+  position: absolute;
+  width: 1120.3267822265625px;
+  height: 225.31787109375px;
+  left: 50.00007660686735%;
+  top: 54.0584075877896%;
+  transform: translate(-50.00007660686735%, -54.0584075877896%) rotate(0deg);
+  color: rgba(203.00000309944153, 54.00000058114529, 80.00000283122063, 1);
+  font-size: 124.15336608886719px;
+  font-weight: bold;
+  font-family: Bebas Neue;
+  line-height: 0.7148440480232239;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-79763d66-8765-422a-b53a-ce3cd769399d {
+  position: absolute;
+  width: 1120.32666015625px;
+  height: 41.02869415283203px;
+  left: 49.999928181171896%;
+  top: 76.34286831190666%;
+  transform: translate(-49.999928181171896%, -76.34286831190666%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69336700439453px;
+  font-weight: undefined;
+  font-family: Bello Caps Pro;
+  line-height: 0.9537500143051147;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-dda258f9-39fc-41ff-95f9-79c07209332c {
+  position: absolute;
+  width: 1120.3267669677734px;
+  height: 406.67861862182616px;
+  left: 50%;
+  top: 13%;
+  transform: translate(-50%, -13%);
+  opacity: 0.7;
+}
+
+.hz-49b803c5-e660-404a-8192-e75e34e62ac4 {
+  position: absolute;
+  width: 1120.32666015625px;
+  height: 41.02869415283203px;
+  left: 50.000081394671845%;
+  top: 92.19318615491251%;
+  transform: translate(-50.000081394671845%, -92.19318615491251%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69336700439453px;
+  font-weight: undefined;
+  font-family: Bello Caps Pro;
+  line-height: 0.9537500143051147;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-9786a7e9-21ad-4cda-8099-4daa9f53057a {
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  background-color: rgba(255,255,255,1);
+}
+
+.hz-d90a6dc1-a4e5-4a76-8acf-2a24952b748a {
+  position: absolute;
+  width: 960px;
+  height: 1440px;
+  left: 0%;
+  top: 2%;
+  transform: translate(-0%, -2%);
+  opacity: undefined;
+}
+
+.hz-a6eb0809-455b-4efd-b739-dd7f8e267a7d {
+  position: absolute;
+  width: 717.2764892578125px;
+  height: 246.51959228515625px;
+  left: 99.99998261372114%;
+  top: 22.87220564454172%;
+  transform: translate(-99.99998261372114%, -22.87220564454172%) rotate(0deg);
+  color: rgba(167.00000524520874, 100.00000163912773, 108.00000116229057, 1);
+  font-size: 126.08960723876953px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 0.8661249876022339;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-a7d22afb-e1ff-4135-8cd2-cd889379d85d {
+  position: absolute;
+  width: 492.05181884765625px;
+  height: 29.770530700683594px;
+  left: 20.104802750991276%;
+  top: 50.70412590087842%;
+  transform: translate(-20.104802750991276%, -50.70412590087842%) rotate(90deg);
+  color: rgba(218.00000220537186, 175.00000476837158, 180.00000447034836, 1);
+  font-size: 27.3377628326416px;
+  font-weight: undefined;
+  font-family: Raleway;
   line-height: 1.2000000476837158;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-4f5cfa9e-02c6-49ea-b40f-94c1950345e4 {
+  position: absolute;
+  width: 665.0504150390625px;
+  height: 40.27526664733887px;
+  left: -112.62900614089169%;
+  top: 85.83168288873924%;
+  transform: translate(-112.62900614089169%, -85.83168288873924%) rotate(0deg);
+  color: rgba(218.00000220537186, 175.00000476837158, 180.00000447034836, 1);
+  font-size: 36.98408126831055px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 1.2000000476837158;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-6f8ab62a-2c06-4f79-8486-076f7e25d2b2 {
+  position: absolute;
+  width: 286.74005126953125px;
+  height: 59.039100646972656px;
+  left: 23.01675431150825%;
+  top: 68.87088504952523%;
+  transform: translate(-23.01675431150825%, -68.87088504952523%) rotate(0deg);
+  color: rgba(218.00000220537186, 175.00000476837158, 180.00000447034836, 1);
+  font-size: 27.629436492919922px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 1.047829508781433;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-6b8940b8-1dda-410d-a262-f505a36d27b2 {
+  position: absolute;
+  width: 565.867431640625px;
+  height: 61.000000953674316px;
+  left: -95.06567903610289%;
+  top: 96.3554766570924%;
+  transform: translate(-95.06567903610289%, -96.3554766570924%) rotate(0deg);
+  color: rgba(218.00000220537186, 175.00000476837158, 180.00000447034836, 1);
+  font-size: 56.0152473449707px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 1.2000000476837158;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-8518ece1-4ecf-4753-bc15-41686aad1cda {
+  position: absolute;
+  width: 240.9107666015625px;
+  height: 130.07005310058594px;
+  left: 21.27347195371388%;
+  top: 54.78545017357656%;
+  transform: translate(-21.27347195371388%, -54.78545017357656%) rotate(0deg);
+  color: rgba(126.00000008940697, 37.00000159442425, 16.000000946223736, 1);
+  font-size: 35.274532318115234px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 0.8661249876022339;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-af2ecdad-6e5d-4efa-a992-4c7b0fe8144a {
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  background-color: rgba(255,255,255,1);
+}
+
+.hz-363dbc44-1507-45ff-a154-2baafc965fd8 {
+  position: absolute;
+  width: 960px;
+  height: 1440px;
+  left: 0%;
+  top: 2%;
+  transform: translate(-0%, -2%);
+  opacity: undefined;
+}
+
+.hz-76588cd5-853d-410a-a53a-afa745571804 {
+  position: absolute;
+  width: 717.2764892578125px;
+  height: 246.51959228515625px;
+  left: 99.99998261372114%;
+  top: 22.87220564454172%;
+  transform: translate(-99.99998261372114%, -22.87220564454172%) rotate(0deg);
+  color: rgba(167.00000524520874, 100.00000163912773, 108.00000116229057, 1);
+  font-size: 126.08960723876953px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 0.8661249876022339;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-83694e4e-e964-4858-8000-612df872c8db {
+  position: absolute;
+  width: 492.05181884765625px;
+  height: 29.770530700683594px;
+  left: 20.104802750991276%;
+  top: 50.70412590087842%;
+  transform: translate(-20.104802750991276%, -50.70412590087842%) rotate(90deg);
+  color: rgba(218.00000220537186, 175.00000476837158, 180.00000447034836, 1);
+  font-size: 27.3377628326416px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 1.2000000476837158;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-ccf316a4-ba14-4626-b313-6ede43317911 {
+  position: absolute;
+  width: 665.0504150390625px;
+  height: 40.27526664733887px;
+  left: -112.62900614089169%;
+  top: 85.83168288873924%;
+  transform: translate(-112.62900614089169%, -85.83168288873924%) rotate(0deg);
+  color: rgba(218.00000220537186, 175.00000476837158, 180.00000447034836, 1);
+  font-size: 36.98408126831055px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 1.2000000476837158;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-9e5268a5-db3b-40c0-b64d-3345c906f2a0 {
+  position: absolute;
+  width: 286.74005126953125px;
+  height: 59.039100646972656px;
+  left: 23.01675431150825%;
+  top: 68.87088504952523%;
+  transform: translate(-23.01675431150825%, -68.87088504952523%) rotate(0deg);
+  color: rgba(218.00000220537186, 175.00000476837158, 180.00000447034836, 1);
+  font-size: 27.629436492919922px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 1.047829508781433;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-f6786116-fe4c-4ca8-a039-8355db69e84a {
+  position: absolute;
+  width: 565.867431640625px;
+  height: 61.000000953674316px;
+  left: -95.06567903610289%;
+  top: 96.3554766570924%;
+  transform: translate(-95.06567903610289%, -96.3554766570924%) rotate(0deg);
+  color: rgba(218.00000220537186, 175.00000476837158, 180.00000447034836, 1);
+  font-size: 56.0152473449707px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 1.2000000476837158;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-02849d21-254a-4c75-9e12-5f80df1fde5c {
+  position: absolute;
+  width: 240.9107666015625px;
+  height: 130.07005310058594px;
+  left: 21.27347195371388%;
+  top: 54.78545017357656%;
+  transform: translate(-21.27347195371388%, -54.78545017357656%) rotate(0deg);
+  color: rgba(126.00000008940697, 37.00000159442425, 16.000000946223736, 1);
+  font-size: 35.274532318115234px;
+  font-weight: undefined;
+  font-family: Raleway;
+  line-height: 0.8661249876022339;
+  text-align: left;
+  zIndex: 10;
+}
+
+.hz-50847bdd-c2cf-458c-abdd-3d20b0ab2906 {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(245,233,190,1);
+}
+
+.hz-5f7e8ab3-0fbc-430c-a6a8-f6219326d18b {
+  position: absolute;
+  width: 1120.3267822265625px;
+  height: 225.31787109375px;
+  left: 50.00007660686735%;
+  top: 54.0584075877896%;
+  transform: translate(-50.00007660686735%, -54.0584075877896%) rotate(0deg);
+  color: rgba(203.00000309944153, 54.00000058114529, 80.00000283122063, 1);
+  font-size: 124.15336608886719px;
+  font-weight: bold;
+  font-family: Bebas Neue;
+  line-height: 0.7148440480232239;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-5e901f84-8364-4d70-abf4-26c2f2f54e1a {
+  position: absolute;
+  width: 1120.32666015625px;
+  height: 41.02869415283203px;
+  left: 49.999928181171896%;
+  top: 76.34286831190666%;
+  transform: translate(-49.999928181171896%, -76.34286831190666%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69336700439453px;
+  font-weight: undefined;
+  font-family: Bello Caps Pro;
+  line-height: 0.9537500143051147;
+  text-align: center;
+  zIndex: 10;
+}
+
+.hz-13a45c6a-8944-4159-bf83-bf4cbcd646c6 {
+  position: absolute;
+  width: 1120.3267669677734px;
+  height: 406.67861862182616px;
+  left: 50%;
+  top: 13%;
+  transform: translate(-50%, -13%);
+  opacity: 0.7;
+}
+
+.hz-008e33bd-3563-416c-8ef5-1d729f7f1e95 {
+  position: absolute;
+  width: 1120.32666015625px;
+  height: 41.02869415283203px;
+  left: 50.000081394671845%;
+  top: 92.19318615491251%;
+  transform: translate(-50.000081394671845%, -92.19318615491251%) rotate(0deg);
+  color: rgba(0, 175.00000476837158, 209.00000274181366, 1);
+  font-size: 37.69336700439453px;
+  font-weight: undefined;
+  font-family: Bello Caps Pro;
+  line-height: 0.9537500143051147;
   text-align: center;
   zIndex: 10;
 }
