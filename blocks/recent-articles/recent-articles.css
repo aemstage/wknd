@@ -1,1 +1,33 @@
-/* stylelint-disable */
+.hz-8f2fa18c-133f-4d9a-a791-891f5ec57b03 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(255,255,255,1);
+}
+
+.hz-db6cc985-d78a-4b0d-97ab-9b135ca794b8 {
+  position: absolute;
+  width: 400.0000228881836px;
+  height: 400.0000228881836px;
+  left: 0%;
+  top: 0%;
+  transform: translate(-0%, -0%);
+  opacity: undefined;
+}
+
+.hz-3a7132c7-7c62-4df5-8668-c5cc6a052033 {
+  position: absolute;
+  width: 799.9999389648438px;
+  height: 71.11981201171875px;
+  left: 99.99999237060663%;
+  top: -0.0000012517741924351553%;
+  transform: translate(-99.99999237060663%, -0.0000012517741924351553%) rotate(0deg);
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-weight: undefined;
+  font-family: Source Sans 3;
+  line-height: 1.2000000476837158;
+  text-align: center;
+  z-index: 10;
+}
+
