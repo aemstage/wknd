@@ -1,4 +1,5 @@
+import html from './hz-banner-html.js';
 
 export default function decorate(block) {
-  block.innerHTML = 'Fix me'
+  block.innerHTML = html; 
 };
