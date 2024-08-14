@@ -1,11 +1,11 @@
-.hz-a264752f-8f0c-4439-96ae-56c2d04ada48 {
+.hz-4ee66dbb-ba2f-457a-a669-03f08b4c7b7e {
   position: relative;
   width: 100%;
   height: 400px;
   background-color: rgba(255,255,255,1);
 }
 
-.hz-6ca93903-0975-4cde-bc57-92ca4285e543 {
+.hz-5db790df-d881-4ad1-a252-c935086b1152 {
   position: absolute;
   width: 400.0000228881836px;
   height: 400.0000228881836px;
@@ -15,13 +15,13 @@
   opacity: undefined;
 }
 
-.hz-a00e0824-01cb-4761-baac-dac70330dd8d {
+.hz-3d49934a-f580-48d8-b832-57fa3d5e7dbd {
   position: absolute;
-  width: 799.9999389648438px;
-  height: 383.11981201171875px;
-  left: 99.99999237060663%;
-  top: -0.000024388575056910294%;
-  transform: translate(-99.99999237060663%, -0.000024388575056910294%) rotate(0deg);
+  width: 406.80792236328125px;
+  height: 359.11981201171875px;
+  left: 50.429150995728655%;
+  top: 50.00003265992914%;
+  transform: translate(-50.429150995728655%, -50.00003265992914%) rotate(0deg);
   color: rgba(0, 0, 0, 1);
   font-size: 20px;
   font-weight: undefined;
@@ -31,117 +31,13 @@
   z-index: 10;
 }
 
-.hz-1b262ecf-df37-49fe-8da6-37309e085141 {
+.hz-a199b53a-7a86-471c-8131-60cc3d24722b {
   position: absolute;
-  width: 400px;
-  height: 46.2396240234375px;
-  left: 0%;
-  top: 13.912441489921514%;
-  transform: translate(-0%, -13.912441489921514%) rotate(0deg);
-  color: rgba(245.00000059604645, 243.00000071525574, 127.00000002980232, 1);
-  font-size: 40px;
-  font-weight: undefined;
-  font-family: Source Sans 3;
-  line-height: 1.2000000476837158;
-  text-align: center;
-  z-index: 10;
-}
-
-.hz-dec043df-a85d-42fe-b2c5-71826b82a252 {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: rgba(255,255,255,1);
-}
-
-.hz-d54d6ad0-0cc6-476f-b25e-95be2f0c51eb {
-  position: absolute;
-  width: 400.0000228881836px;
-  height: 400.0000228881836px;
-  left: 0%;
+  width: 393.1919860839844px;
+  height: 393.1919860839844px;
+  left: 100%;
   top: 0%;
-  transform: translate(-0%, -0%);
+  transform: translate(-100%, -0%);
   opacity: undefined;
-}
-
-.hz-5863314b-3b44-4608-8ad8-61a563842833 {
-  position: absolute;
-  width: 799.9999389648438px;
-  height: 383.11981201171875px;
-  left: 99.99999237060663%;
-  top: -0.000024388575056910294%;
-  transform: translate(-99.99999237060663%, -0.000024388575056910294%) rotate(0deg);
-  color: rgba(0, 0, 0, 1);
-  font-size: 20px;
-  font-weight: undefined;
-  font-family: Source Sans 3;
-  line-height: 1.2000000476837158;
-  text-align: center;
-  z-index: 10;
-}
-
-.hz-15e56e23-0eae-4a0d-ae12-ebb1ba706584 {
-  position: absolute;
-  width: 400px;
-  height: 46.2396240234375px;
-  left: 0%;
-  top: 13.912441489921514%;
-  transform: translate(-0%, -13.912441489921514%) rotate(0deg);
-  color: rgba(245.00000059604645, 243.00000071525574, 127.00000002980232, 1);
-  font-size: 40px;
-  font-weight: undefined;
-  font-family: Source Sans 3;
-  line-height: 1.2000000476837158;
-  text-align: center;
-  z-index: 10;
-}
-
-.hz-d8d843fd-8df0-4192-a1bc-ad0b3817955f {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: rgba(255,255,255,1);
-}
-
-.hz-1162d2f9-4334-4244-8e6c-e43e7013b943 {
-  position: absolute;
-  width: 400.0000228881836px;
-  height: 400.0000228881836px;
-  left: 0%;
-  top: 0%;
-  transform: translate(-0%, -0%);
-  opacity: undefined;
-}
-
-.hz-3805660a-93ee-4a9d-803d-f6149fb42df0 {
-  position: absolute;
-  width: 799.9999389648438px;
-  height: 383.11981201171875px;
-  left: 99.99999237060663%;
-  top: -0.000024388575056910294%;
-  transform: translate(-99.99999237060663%, -0.000024388575056910294%) rotate(0deg);
-  color: rgba(0, 0, 0, 1);
-  font-size: 20px;
-  font-weight: undefined;
-  font-family: Source Sans 3;
-  line-height: 1.2000000476837158;
-  text-align: center;
-  z-index: 10;
-}
-
-.hz-7553b806-fd4d-4a9b-9630-4b65c46cf2ac {
-  position: absolute;
-  width: 400px;
-  height: 46.2396240234375px;
-  left: 0%;
-  top: 13.912441489921514%;
-  transform: translate(-0%, -13.912441489921514%) rotate(0deg);
-  color: rgba(245.00000059604645, 243.00000071525574, 127.00000002980232, 1);
-  font-size: 40px;
-  font-weight: undefined;
-  font-family: Source Sans 3;
-  line-height: 1.2000000476837158;
-  text-align: center;
-  z-index: 10;
 }
 
